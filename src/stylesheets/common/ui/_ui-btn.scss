@@ -120,6 +120,33 @@
     #{$self}--theme-primary#{$self}--state-loading:focus & {
       box-shadow: none;
     }
+
+    #{$self}--smodal & {
+      padding: em(34 20 24, 24);
+      height: em(100, 24);
+
+      font-size: em(14px);
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: em(3.92, 24);
+
+      border: none;
+      border-radius: 57px;
+      background-image: linear-gradient(270deg, #677bbf 0%, #049f77 100%);
+
+      @include res(md){
+        font-size: em(18px);
+      }
+
+      @include res(lg){
+        font-size: em(20px);
+      }
+
+      @include res(xl){
+        font-size: em(24px);
+      }
+
+    }
   }
 
   /* buttons block */

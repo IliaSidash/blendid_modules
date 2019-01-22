@@ -1,0 +1,184 @@
+/* block */
+/***********************************************/
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700');
+$customFont: 'Montserrat', sans-serif;
+
+.smodal {
+  $self: &;
+  margin: 0 10px;
+  padding: 50px 10px;
+
+  font-family: $customFont;
+
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+  border-radius: 48px;
+  background-color: #fdfdfd;
+
+  &__title{
+    margin: 0 0 20px;
+    font-size: 19px;
+
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: -0.14px;
+
+    @include res(sm){
+      font-size: 30px;
+    }
+
+    @include res(md){
+      text-align: left;
+      font-size: 40px;
+    }
+
+    @include res(lg){
+      margin: 0 0 40px;
+
+      font-size: 46px;
+    }
+
+    @include res(xl) {
+      margin: 0 0 75px;
+      padding: 0 0 0 34px;
+
+      font-size: 52px;
+    }
+  }
+
+  &__row{
+
+    @include res(md){
+      display: flex;
+    }
+  }
+
+  &__picture{
+    position: relative;
+
+    max-width: 180px;
+    margin: 0 auto;
+
+    @include res(sm){
+      max-width: 287px;
+      margin-bottom: 50px;
+    }
+
+    @include res(md){
+      margin: 0;
+      width: 33.33%;
+      align-self: center;
+    }
+
+    @include res(xl){
+      max-width: none;
+      margin-right: 105px;
+    }
+  }
+
+  &__content{
+    @include res(md){
+      padding-left: 40px;
+      width: 66.66%;
+    }
+  }
+
+  &__img{
+    max-width: 100%;
+    height: auto;
+  }
+
+  &__icon{
+    display: none;
+
+    @include res(sm){
+      position: absolute;
+      right: -10px;
+      bottom: -25px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 90px;
+      height: 90px;
+
+      background-color: #fff;
+      border-radius: 50%;
+      box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    @include res(xl){
+      right: -20px;
+      bottom: -51px;
+
+      width: 113px;
+      height: 113px;
+
+    }
+  }
+
+  &__text{
+    margin: 20px 0;
+    color: #727272;
+    font-weight: 400;
+    letter-spacing: -0.11px;
+
+    @include res(sm){
+      margin: 0 0 30px;
+      font-size: 18px;
+    }
+
+    @include res(lg){
+      margin: 0 0 40px;
+      font-size: 23px;
+    }
+
+    @include res(xl){
+      overflow: hidden;
+      margin: 0 0 58px;
+      padding: 0 0 0 12px;
+      max-height: 120px;
+
+      font-size: 22px;
+    }
+  }
+
+  &__btn{
+    margin-top: 20px;
+
+    @include res(lg){
+      margin-top: 28px;
+    }
+
+    @include res(xl){
+      margin-top: 34px;
+    }
+  }
+
+  &-ico-svg{
+    width: 22px;
+    height: 16px;
+    margin-left: 20px;
+
+    @include res(xl){
+      width: 44px;
+      height: 33px;
+      margin-left: 49px;
+
+    }
+  }
+
+  @include res(sm){
+    margin: 30px;
+    padding: 50px 30px;
+  }
+
+  @include res(md){
+    padding: 50px 30px 70px;
+  }
+
+  @include res(xl) {
+    padding: 102px 83px 126px 91px;
+    max-width: 1163px;
+  }
+
+}

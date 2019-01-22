@@ -74,5 +74,30 @@
     }
   }
 
+  &--smodal{
+    padding: em(31 20 36, 26);
+    height: em(99, 26);
+
+    font-size: em(14px);
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: em(2.25, 26);
+
+    border-radius: 57px;
+    border: 1px solid #c2c2c2;
+
+    @include res(md){
+      font-size: em(18px);
+    }
+
+    @include res(lg){
+      font-size: em(22px);
+    }
+
+    @include res(xl){
+      font-size: em(26px);
+    }
+  }
+
 }
 
